@@ -11,7 +11,7 @@ endif
 # -----------------------------------------------------------------------------
 .PHONY: all clean test install run deploy down
 
-all: clean test install run deploy down
+all: clean install test run deploy down
 
 venv:
 	uv venv .venv
@@ -20,6 +20,9 @@ test: install
 	uv run pytest tests -vv --show-capture=all
 
 install: generate_dot_env venv
+	@command -v uv >/dev/null 2>&1 || \
+		(curl -Ls https://astral.sh/uv/install.sh | bash && \
+		 echo "$$HOME/.cargo/bin" >> $$GITHUB_PATH)
 	uv pip install -e ".[dev]"
 
 run: venv
