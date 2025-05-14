@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Submit Project</title>
+</head>
+<body>
+  <h1>Submit a Project</h1>
+
+  <form id="project-form">
+    <label>Project Name:</label><br>
+    <input type="text" id="name" required><br><br>
+
+    <label>GitHub URL:</label><br>
+    <input type="url" id="github_url" required><br><br>
+
+    <label>Author Name:</label><br>
+    <input type="text" id="author_name" required><br><br>
+
+    <label>Module Name:</label><br>
+    <input type="text" id="module_name" required><br><br>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <p id="status"></p>
+
+    <script>
+  document.getElementById("project-form").addEventListener("submit", async function(e) {
+    e.preventDefault();
+
+    const project = {
+      name: document.getElementById("name").value,
+      github_url: document.getElementById("github_url").value,
+      author_name: document.getElementById("author_name").value,
+      module_name: document.getElementById("module_name").value,
+    };
+
+    const response = await fetch("/api/projects", {  // <== note: no /api if your route is /projects
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(project)  // <== sending the project object directly
+    });
+
+        if (response.ok) {
+      // ✅ Redirect to homepage
+      window.location.href = "/";
+    } else {
+      // ❌ Show error if failed
+      const result = await response.json();
+      document.getElementById("status").textContent =
+        result?.detail || "Failed to submit project.";
+    }
+  });
+</script>
+
+</body>
+</html>
+

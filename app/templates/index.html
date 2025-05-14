@@ -1,0 +1,10 @@
+<html>
+  <body>
+      {% for project in projects %}
+      <li>
+        <a href={{project.github_url}}><strong>{{ project.name }}</strong></a> by {{ project.author_name }} — Module: {{ project.module_name }}
+      </li>
+    {% endfor %}
+      <button onclick="window.location.href='/submit'">Submit an Assignment</button>
+  </body>
+</html>
