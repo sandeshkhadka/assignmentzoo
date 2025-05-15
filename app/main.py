@@ -1,10 +1,10 @@
-from api.routes.api import router as api_router
-from core.config import API_PREFIX, DEBUG, FRONTEND_PREFIX, PROJECT_NAME, VERSION
-from core.events import create_start_app_handler
-from fastapi.staticfiles import StaticFiles
-from frontend.routes import frontend_router
-
 from fastapi import FastAPI
+from fastapi.staticfiles import StaticFiles
+
+from app.api.routes.api import router as api_router
+from app.core.config import API_PREFIX, DEBUG, FRONTEND_PREFIX, PROJECT_NAME, VERSION
+from app.core.events import create_start_app_handler
+from app.frontend.routes import frontend_router
 
 
 def get_application() -> FastAPI:
