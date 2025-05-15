@@ -1,0 +1,206 @@
+
+/* Form styles */
+.form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #2c3e50;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+.status-message {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.status-message.error {
+  background-color: #feeced;
+  color: #e74c3c;
+  border: 1px solid #fadbd8;
+}
+
+.status-message.success {
+  background-color: #edfbf6;
+  color: #27ae60;
+  border: 1px solid #d0f4e6;
+}
+
+.back-button {
+  display: block;
+  text-align: center;
+  margin-top: 1.5rem;
+  color: #3498db;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.back-button:hover {
+  color: #2980b9;
+  text-decoration: underline;
+}
+
+/* Make submit button on form page same width as form */
+.form-container .submit-button {
+  width: 100%;
+  margin-top: 1rem;
+}
+/* Form styles */
+.form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #2c3e50;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.75rem;
+/* Form styles */
+.form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #2c3e50;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+.status-message {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.status-message.error {
+  background-color: #feeced;
+  color: #e74c3c;
+  border: 1px solid #fadbd8;
+}
+
+.status-message.success {
+  background-color: #edfbf6;
+  color: #27ae60;
+  border: 1px solid #d0f4e6;
+}
+
+.back-button {
+  display: block;
+  text-align: center;
+  margin-top: 1.5rem;
+  color: #3498db;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.back-button:hover {
+  color: #2980b9;
+  text-decoration: underline;
+}
+
+/* Make submit button on form page same width as form */
+.form-container .submit-button {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+/* Make submit button on form page same width as form */
+.form-container .submit-button {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+/* Make submit button on form page same width as form */
+.form-container .submit-button {
+  width: 100%;
+  margin-top: 1rem;
+}
+}
+
+/* Make submit button on form page same width as form */
+.form-container .submit-button {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+/* Make submit button on form page same width as form */
+.form-container .submit-button {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+/* Make submit button on form page same width as form */
+.form-container .submit-button {
+  width: 100%;
+  margin-top: 1rem;
+}

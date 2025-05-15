@@ -1,10 +1,21 @@
 <html>
+  <head>
+    <link rel="stylesheet" href="{{ url_for('static', path='style.css') }}">
+  </head>
   <body>
-      {% for project in projects %}
-      <li>
-        <a href={{project.github_url}}><strong>{{ project.name }}</strong></a> by {{ project.author_name }} — Module: {{ project.module_name }}
-      </li>
-    {% endfor %}
-      <button onclick="window.location.href='/submit'">Submit an Assignment</button>
+    <div class="container">
+      <h1>Look what Fusemachines Fellow Built</h1>
+      <div class="cards-container">
+        {% for project in projects %}
+          <div class="card">
+            <h2>{{ project.name }}</h2>
+            <p class="author">By: {{ project.author_name }}</p>
+            <p class="module">Module: {{ project.module_name }}</p>
+            <a href="{{ project.github_url }}" class="github-button">View on GitHub</a>
+          </div>
+        {% endfor %}
+      </div>
+      <button class="submit-button" onclick="window.location.href='/submit'">Submit an Assignment</button>
+    </div>
   </body>
 </html>
