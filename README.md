@@ -92,5 +92,5 @@ assignmentzoo/
 
 ## Demo
 
-[Link to Demo Video]() - A short screen recording of the application running with passing tests and ci
+[Link to Demo Video]() - A screen recording of the application running with passing tests and ci
 workflows.
