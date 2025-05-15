@@ -20,9 +20,7 @@ test: install
 	uv run pytest tests -vv --show-capture=all
 
 install: generate_dot_env venv
-	@command -v uv >/dev/null 2>&1 || \
-		(curl -Ls https://astral.sh/uv/install.sh | bash && \
-		 echo "$$HOME/.cargo/bin" >> $$GITHUB_PATH)
+	uv --version || pip install uv
 	uv pip install -e ".[dev]"
 
 run: venv
